@@ -1,0 +1,1198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #323119;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  
+}
+
+.brand {
+  margin-top: -7px;
+}
+
+.brand span {
+  color: rgb(255, 85, 0);
+}
+
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px; 
+}
+
+.menu li:hover a {
+  background-color: rgb(255, 85, 0);  
+  color: rgb(255, 85, 0);
+}
+
+.menu .active {
+  color: rgb(255, 85, 0); 
+}
+
+.menu li a:hover {
+  color: rgb(255, 85, 0);
+}
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.info-content span {
+  color: rgb(255, 85, 0);
+}
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: rgb(255, 85, 0);  
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+}
+
+.download-cv:hover {
+  background-color: azure;
+  box-shadow: none;
+}
+
+.main img {
+  border: 7px solid rgb(255, 85, 0);  
+  width: 350px;
+  height: 520px;
+  z-index: 1;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: #191c32;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: rgb(255, 85, 0);
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: #191c32;
+  color: #fff;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: #2b3058;
+  margin: 1em;
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543491/samples/2-original_agisst.png);
+  background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card__proyect-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__proyect-links i {
+  font-size: 1.5em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.project-details-button a {
+  text-decoration: none;
+  color: #191c32;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: rgb(255, 85, 0);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-color: rgb(255, 85, 0);
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.social-networks i {
+  font-size: 1.5em;
+}
+
+
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: #2b3058;
+  margin: 1em;
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/2-original.png);
+  background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card__proyect-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__proyect-links i {
+  font-size: 1.5em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.project-details-button a {
+  text-decoration: none;
+  color: #191c32;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color:  rgb(255, 85, 0);}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-color: #1f265b;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+  color: white;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+  color: #fff;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+}
+/* Estilos de la sección de contacto */
+
+
+/* Estilos de las tarjetas de proyecto */
+.card {
+  width: 320px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  background-color: #222436;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Movimiento suave al hacer hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card__img {
+  width: 100%;
+  height: 220px;
+  border-bottom: 3px solid #ff6f3d; /* Línea decorativa */
+}
+
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen */
+}
+
+.card__title {
+  text-align: center;
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  margin: 15px 0;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.card__proyect-links a {
+  color: #ff6f3d;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.card__proyect-links a:hover {
+  color: #ff9f60; /* Cambio suave al hover */
+}
+
+.button-content {
+  text-align: center;
+}
+
+.project-details-button {
+  padding: 10px 20px;
+  background-color: #ff6f3d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-details-button:hover {
+  background-color: #ff5a1e;
+}
+
+
+/* css #1*/
+/* Estilo del botón */
+.project-details-button {
+  background-color: #ff9800; /* Color naranja */
+  color: white; /* Color del texto en blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 1.1em; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+/* Cambia el color al pasar el ratón */
+.project-details-button:hover {
+  background-color: #fb8c00; /* Color más oscuro al pasar el ratón */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Estilo para la información extendida */
+.extended-info {
+  font-family: 'Times New Roman', Times, serif; /* Fuente Times New Roman */
+  font-size: 1.5em; /* Tamaño de fuente grande */
+  color: #333; /* Color del texto */
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  position: fixed; /* Fijo en la página */
+  top: 50%; /* Centrando verticalmente */
+  left: 50%; /* Centrando horizontalmente */
+  transform: translate(-50%, -50%); /* Centrando */
+  display: none; /* Oculto inicialmente */
+  z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+  opacity: 0; /* Inicialmente transparente */
+  transition: opacity 0.5s ease; /* Transición suave para mostrar el texto */
+}
+
+/* Mostrar la información */
+.extended-info.show {
+  display: block; /* Muestra el texto */
+  opacity: 1; /* Cambia la opacidad a 1 para hacerlo visible */
+}
+
+/* findecss #1*/
+.social-networks i {
+  margin: 0 10px; /* Espacio entre los íconos */
+  font-size: 32px; /* Aumenta el tamaño de los íconos */
+  color: black; /* Cambia el color a negro */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: color 0.3s; /* Transición suave para el color */
+}
+
+.social-networks i:hover {
+  color: #555; /* Cambia el color al pasar el ratón (gris oscuro) */
+} 
+
+.skills-section {
+  padding: 50px 20px;
+  background-color: #191c32;
+  color: #fff;
+  text-align: center;
+}
+
+.skills-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: rgb(255, 85, 0);
+}
+
+.skills-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skill {
+  margin: 20px 0;
+}
+
+.skill-name {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  background-color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+  position: relative; /* Para el posicionamiento del relleno */
+}
+
+.skill-fill {
+  height: 100%;
+  border-radius: 20px;
+  width: 0; /* Inicia en 0% para que la animación funcione */
+  transition: width 2s ease-in-out; /* Animación suave del ancho */
+}
+
+/* Solo colores, el ancho lo controlará JavaScript */
+.skill-fill.csharp { background-color: rgb(255, 85, 0); }
+.skill-fill.oops { background-color: rgb(255, 165, 0); }
+.skill-fill.java { background-color: rgb(255, 215, 0); }
+.skill-fill.vscode { background-color: rgb(0, 153, 204); }
+.skill-fill.vb { background-color: rgb(76, 175, 80); }
+.skill-fill.maintenance { background-color: rgb(76, 175, 80); }
+.skill-fill.general { background-color: rgb(0, 188, 212); }
+.skill-fill.social { background-color: rgb(255, 0, 0); }
+.skill-fill.networks { background-color: rgb(63, 81, 181); }
+
+.intereses {
+  text-align: 90px; /* Alinear a la derecha */
+  margin-top: 40px; /* Espaciado superior aumentado */
+}
+
+.intereses i {
+  font-size: 60px; /* Tamaño muy grande */
+  margin: 0 15px; /* Espaciado entre los íconos */
+  color: #ffcc80; /* Color naranja */
+}
+
+.about {
+  background-color: #f9f9f9; /* Color de fondo suave */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 40px; /* Espaciado inferior */
+}
+
+.about h2 {
+  font-family: 'Georgia', serif; /* Fuente clásica */
+  font-size: 2.5em; /* Tamaño de fuente grande */
+  color: #333; /* Color de texto oscuro */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.about-info p {
+  font-family: 'Arial', sans-serif; /* Fuente limpia y moderna */
+  font-size: 1.2em; /* Tamaño de fuente moderado */
+  color: #555; /* Color de texto más claro */
+  line-height: 1.6; /* Espaciado entre líneas */
+  margin-bottom: 30px; /* Espaciado inferior */
+}
+
+.divider {
+  width: 100px; /* Ancho de la línea divisoria */
+  height: 4px; /* Alto de la línea divisoria */
+  background-color: #ffcc80; /* Color de la línea divisoria */
+  margin: 20px 0; /* Espaciado alrededor de la línea divisoria */
+  border-radius: 2px; /* Bordes redondeados */
+}
+
+.intereses {
+  display: flex; /* Usar flexbox para el alineamiento */
+  justify-content: flex-start; /* Alinear a la izquierda */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.intereses i {
+  font-size: 50px; /* Tamaño mediano */
+  margin: 0 15px; /* Espaciado entre los íconos */
+  color: #ffcc80; /* Color naranja */
+}
+
+
+
+.alert {
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 600px; /* Ancho máximo para la alerta */
+  font-size: 1.2em; /* Tamaño de fuente */
+  transition: opacity 0.5s ease; /* Transición para el efecto de desvanecimiento */
+  opacity: 1; /* Inicialmente visible */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para efecto de profundidad */
+}
+
+/* Estilo para mensaje exitoso */
+.success {
+  background-color: #d4edda; /* Verde claro */
+  color: #155724; /* Texto verde oscuro */
+  border: 1px solid #c3e6cb; /* Borde verde claro */
+}
+
+/* Estilo para mensaje de error */
+.error {
+  background-color: #f8d7da; /* Rojo claro */
+  color: #721c24; /* Texto rojo oscuro */
+  border: 1px solid #f5c6cb; /* Borde rojo claro */
+}
+
+/* Estilo adicional para animar la alerta al desaparecer */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-out {
+  animation: fadeOut 2s forwards; /* Desvanecer en 2 segundos */
+}
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Cambia a la fuente que prefieras */
+}
+
+.contact-section {
+  position: relative;
+  padding: 60px;
+  background: url('IMG/fondo.jpg') no-repeat center center/cover;
+  backdrop-filter: blur(8px); /* Efecto borroso en la imagen de fondo */
+  color: #fff;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: 'Georgia', serif; 
+  color: #fff; /* Color que te gusta */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-container img {
+  width: 40%; /* Tamaño de la imagen del lado derecho */
+  border: 4px solid #fff; /* Borde elegante naranja */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+}
+
+.contact-form {
+  width: 55%; /* El formulario ocupa el otro espacio */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para resaltar el formulario */
+  padding: 20px;
+  border-radius: 10px;
+  border: 4px solid #fff; /* Borde elegante naranja para el formulario */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button[type="submit"] {
+  padding: 12px;
+  background-color: #634848; /* Color naranja para el botón */
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #fff; /* Oscurecer el botón al pasar el mouse */
+}
+
+ /* css de prueba  */
+/* From Uiverse.io by Pinparker */ 
+.form {
+  position: relative;
+  display: block;
+  padding: 2.2rem;
+  max-width: 350px;
+  background: linear-gradient(
+      14deg,
+      rgba(2, 0, 36, 0.8) 0%,
+      rgba(24, 24, 65, 0.7) 66%,
+      rgb(20, 76, 99) 100%
+    ),
+    radial-gradient(
+      circle,
+      rgba(2, 0, 36, 0.5) 0%,
+      rgba(32, 15, 53, 0.2) 65%,
+      rgba(14, 29, 28, 0.9) 100%
+    );
+  border: 2px solid #fff;
+  -webkit-box-shadow: rgba(0, 212, 255) 0px 0px 50px -15px;
+  box-shadow: rgba(0, 212, 255) 0px 0px 50px -15px;
+  overflow: hidden;
+  z-index: +1;
+  border-radius: 8px;
+}
+
+/*------input and submit section-------*/
+
+.input-container {
+  position: relative;
+}
+
+.input-container input,
+.form button {
+  outline: none;
+  border: 2px solid #ffffff;
+  margin: 8px 0;
+  font-family: monospace;
+  border-radius: 4px;
+}
+
+.input-container input {
+  background-color: #fff;
+  padding: 6px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 250px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.input-mail:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.9s;
+}
+
+.input-pwd:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.9s;
+}
+
+.submit {
+  position: relative;
+  display: block;
+  padding: 8px;
+  background: linear-gradient(90deg, #243949 0%, #517fa4 100%);
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.submit:hover {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  box-shadow: 4px 5px 17px -4px #ffffff;
+  cursor: pointer;
+}
+
+.submit:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.submit::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 85%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+/*--------signup section---------*/
+
+.signup-link {
+  color: #c0c0c0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  font-family: monospace;
+}
+
+.signup-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.up:hover {
+  text-decoration: underline;
+}
+
+/*--------header section-----------*/
+
+.form-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-family: monospace;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  animation-duration: 1.5s;
+  overflow: hidden;
+  transition: 0.12s;
+}
+
+.form-title span {
+  animation: flickering 2s linear infinite both;
+}
+
+.title-2 {
+  display: block;
+  margin-top: -0.5rem;
+  font-size: 2.1rem;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  -webkit-text-stroke: #fff 0.1rem;
+  letter-spacing: 0.2rem;
+  color: transparent;
+  position: relative;
+  text-shadow: 0px 0px 16px #cecece;
+}
+
+.title-2 span::before,
+.title-2 span::after {
+  content: "—";
+}
+
+@keyframes flickering {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  41.99% {
+    opacity: 1;
+  }
+
+  42% {
+    opacity: 0;
+  }
+
+  43% {
+    opacity: 0;
+  }
+
+  43.01% {
+    opacity: 1;
+  }
+
+  47.99% {
+    opacity: 1;
+  }
+
+  48% {
+    opacity: 0;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  49.01% {
+    opacity: 1;
+  }
+}
+
+/*---------shooting stars-----------*/
+
+.bg-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-size: cover;
+  animation: animateBg 50s linear infinite;
+}
+
+@keyframes animateBg {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: animate 3s linear infinite;
+}
+
+.star::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(315deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+.star:nth-child(1) {
+  top: 0;
+  right: 0;
+  left: initial;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+
+.star:nth-child(2) {
+  top: 0;
+  right: 100px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+}
+
+.star:nth-child(3) {
+  top: 0;
+  right: 220px;
+  left: initial;
+  animation-delay: 2.75s;
+  animation-duration: 2.75s;
+}
+
+.star:nth-child(4) {
+  top: 0;
+  right: -220px;
+  left: initial;
+  animation-delay: 1.6s;
+  animation-duration: 1.6s;
+}
+
+
+.message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+  
+
+
+
+.intereses {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.intereses a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  margin-left: auto; /* Mantiene los íconos alineados a un lado */
+}
+
+.intereses a:hover {
+  transform: scale(1.1);
+}
+
+/* Icono de HTML */
+.icon-html {
+  background-color: #e34c26;
+  content: "HTML";
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-html::after {
+  content: "<>";
+  font-size: 24px;
+  color: white;
+}
+
+/* Icono de CSS */
+.icon-css {
+  background-color: #264de4;
+}
+.icon-css::after {
+  content: "{ }";
+  font-size: 24px;
+  color: white;
+}
+
+/* Icono de Diseño Gráfico */
+.icon-design {
+  background: linear-gradient(45deg, #f39c12, #e74c3c);
+}
+.icon-design::after {
+  content: "🎨";
+  font-size: 24px;
+}
+
+/* Icono de Photoshop */
+.icon-photoshop {
+  background-color: #001e36;
+}
+.icon-photoshop::after {
+  content: "Ps";
+  font-size: 24px;
+  color: white;
+}
+
+/* Icono de Illustrator */
+.icon-illustrator {
+  background-color: #ff9a00;
+}
+.icon-illustrator::after {
+  content: "Ai";
+  font-size: 24px;
+  color: white;
+}
+
+/* Icono de CorelDRAW */
+.icon-coreldraw {
+  background: linear-gradient(135deg, #00a651, #006400);
+}
+.icon-coreldraw::after {
+  content: "🌎";
+  font-size: 24px;
+}
+.intereses a i {
+  color: black; /* Mantén el color negro */
+  font-size: 55px; /* Aumenta el tamaño del ícono cuatro veces */
+  transition: color 0.3s ease;
+}
+
+.intereses a:hover i {
+  color: #333333; /* Color más oscuro al pasar el ratón, si lo deseas */
+}
+
